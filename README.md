@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# 🍿 usePopcorn
+An interactive React application that allows users to search for movies, view details, rate them, and manage their watchlist. Built to enhance proficiency in React.js and API integration.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Live Demo
+🔗 [usePopcorn Live](https://bharathraj1614.github.io/usePopcorn/)
 
-## Available Scripts
+## 📖 Table of Contents
+- [Project Overview](#-project-overview)  
+- [Features](#-features)  
+- [Technologies Used](#%EF%B8%8F-technologies-used)  
+- [Getting Started](#-getting-started)  
+- [Available Scripts](#-available-scripts)  
+- [Project Structure](#-project-structure)  
+- [Contributing](#-contributing) 
 
-In the project directory, you can run:
+## 🚀 Project Overview
+usePopcorn is a React.js-based application that enables users to explore movies, rate them, and manage their watched movies list. By leveraging the **OMDb API** (Open Movie Database), the app provides access to an extensive movie database, allowing users to find detailed movie information, including genre, cast, director, ratings, and more. This project was built as part of my journey to learning React.js and improving my frontend development skills.
 
-### `npm start`
+## ✨ Features
+✔️ **Movie Search** – Allows users to search for movies by title.  
+✔️ **Movie Details** – Displays detailed information about selected movies.  
+✔️ **Rate and Add to Watched** – Users can rate movies and add them to their watched list.  
+✔️ **Remove from Watched** – Users can remove movies from their watched list.  
+✔️ **Watched Movies Statistics** – Displays statistics about watched movies.  
+✔️ **Keyboard Shortcuts** – Use **Enter** key to start searching and **Esc** key to close movie details.  
+✔️ **Local Storage** – Watched movies are stored in the browser's local storage for persistence.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Technologies Used
+- **React.js** – Frontend framework for building the UI.  
+- **Create React App** – Boilerplate for setting up the project.  
+- **CSS Modules** – Ensures scoped styling.  
+- **JavaScript (ES6+)** – Implements modern JavaScript features.  
+- **OMDb API** – Fetches movie data.  
+- **GitHub Pages** – Deployed the project using GitHub Pages.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⚡ Getting Started
 
-### `npm test`
+### Prerequisites  
+- **Node.js**: Download and install from [Node.js](https://nodejs.org/)  
+- **npm**: Comes with Node.js (Check with `npm -v`)  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation Steps  
+```sh
+# Clone the Repository
+git clone https://github.com/bharathraj1614/usePopcorn.git
+cd usePopcorn
 
-### `npm run build`
+# Install Dependencies
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Start the Development Server
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#Open http://localhost:3000 in the browser.
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📜 Available Scripts
+``` sh
+npm start      # Runs the app in development mode  
+npm test       # Launches the test runner  
+npm run build  # Builds the app for production  
+npm run eject  # Ejects the app configuration (use with caution)
+```
+## 📂 Project Structure
+```csharp
+usePopcorn/
+├── public/           # Static assets
+│   ├── index.html
+│   └── ...
+├── src/              # Source code
+│   ├── components/   # Reusable components
+│   ├── assets/       # Images & other assets
+│   ├── App.js        # Main app component
+│   ├── index.js      # Entry point
+│   └── ...
+├── .gitignore
+├── package.json
+├── README.md
+└── LICENSE
+```
+## 🤝 Contributing
+- Fork the repository.
+- Create a new branch (feature/YourFeature).
+- Commit your changes (git commit -m "Added new feature").
+- Push to your branch (git push origin feature/YourFeature).
+- Open a Pull Request.
