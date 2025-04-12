@@ -4,6 +4,15 @@ import { useKey } from "./useKey";
 import { useLocalStorageState } from "./useLocalStorageState";
 import { useMovies } from "./useMovies";
 
+// const useDebounce = (callback, delay) => {
+//   const debouncedFunction = useCallback(
+//     (...args) => {
+//       const handler = setTimeout(() => callback(...args), delay);
+//       return () => clearTimeout(handler);
+//     },
+//     [callback, delay]
+//   );
+
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 
@@ -214,6 +223,7 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
   useEffect(
     function () {
       if (userRating) countRef.current++;
+      console.log("hi", countRef.current);
     },
     [userRating]
   );
